@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f6dbb7;
+    color: #3c4041;
+}
+
+#main-container {
+    /* border: black solid 1px; */
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    max-width: 850px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 85%;
+
+}
+
+#header-title {
+    font-family: 'Lora';
+    font-size: 4rem;
+    color: #315383;
+}
+
+#add-book-container {
+    /* border: springgreen solid 1px; */
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+
+.add-book.section{
+    /* border: tomato solid 1px; */
+    font-size: 1.5rem;
+}
+
+.add-book.para,
+.add-book.input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-book.para {
+    /* border: cyan solid 1px; */
+    margin: 0;
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.add-book.title,
+.add-book.author {
+    flex-grow: 2;
+}
+
+.add-book.total-pages,
+.add-book.pages-read {
+    max-width: 105px;
+}
+
+#submit-btn {
+    width: 60px;
+    background-color: #315383;
+    color: white;
+    border-radius: 10px;
+}
+
+.book.container {
+    border-bottom: #f1f1f1 solid 1px;
+    display: flex;
+}
+
+.book-left {
+    /* border: turquoise solid 1px; */
+    width: 95%;
+}
+
+.book-right {
+    /* border: tomato solid 1px; */
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book .title {
+    /* border: tomato solid 1px; */
+    font-size: 2rem;
+    margin-top: 35px;
+}
+
+.book .author {
+    /* border: steelblue solid 1px; */
+    font-size: 1.5rem;
+    margin-top: 17px;
+}
+
+.book .progress-section {
+    /* border: violet solid 1px; */
+    display: flex;
+
+}
+
+.book .progress-bar {
+    /* border: springgreen solid 1px; */
+    background-color: #b2c7d4;
+    width: 80%;
+    border-radius: 3px;
+    margin: 20px 0;
+
+}
+
+.book .progress-fill {
+    height: 6px;
+    background-color: #315383;
+    border-radius: 3px;
+}
+
+.book .progress-status {
+    /* border: brown solid 1px; */
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+img {
+    max-width: 60%;
+    
+}
+
+@media (max-width: 600px) {
+    #add-book-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

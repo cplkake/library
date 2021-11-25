@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>My Library</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1 id="header-title">My Library</h1>
+        
+        <form id="add-book-container">
+            <div class="add-book section title">
+                <p class="add-book text">Title</p>
+                <input class="add-book input" type="text" id="title">
+            </div>
+            <div class="add-book section author">
+                <p class="add-book text">Author</p>
+                <input class="add-book input" id="author">
+            </div>
+            <div class="add-book section total-pages">
+                <p class="add-book text">Total pages</p>
+                <input class="add-book input" id="total-pages">
+            </div>
+            <div class="add-book section pages-read">
+                <p class="add-book text">Pages Read</p>
+                <input class="add-book input" id="pages-read">
+            </div>
+            <input type="button" id="submit-btn" value="Add">
+        </form>
+        
+        <div id="display-container">
+            <!-- <div class="book container" id="deepWork-Newport">
+                <div class="book-left">
+                    <h3 class="book title">Deep Work</h3>
+                    <p class="book author">Newport, Cal</p>
+                    <div class="book progress-section">
+                        <div class="book progress-bar">
+                            <div class="book progress-fill" style="width: 27%;"></div>
+                        </div>
+                        <div class="book progress-status">
+                            27%
+                        </div>
+                    </div>
+                    <p class="book total-pages">263 pages</p>
+                </div>
+                <div class="book-right">
+                    <img src="./images/delete1.svg" alt="delete" class="delete-icon">
+                </div>
+            </div> -->
+        </div>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
